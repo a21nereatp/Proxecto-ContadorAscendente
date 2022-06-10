@@ -17,61 +17,51 @@ public class ContadorAscendenteTest {
     }
 
     @Test
-    public void testGetValorActual() {
-        System.out.println("getValorActual");
-        ContadorAscendente instance = null;
-        int expResult = 0;
-        int result = instance.getValorActual();
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
-    }
-
-    @Test
-    public void testSetValorActual() {
-        System.out.println("setValorActual");
-        int valorActual = 0;
-        ContadorAscendente instance = null;
-        instance.setValorActual(valorActual);
-        fail("The test case is a prototype.");
-    }
-
-    @Test
     public void testIncrementar() {
         System.out.println("incrementar");
-        ContadorAscendente instance = null;
-        int expResult = 0;
+        ContadorAscendente instance = new ContadorAscendente(-500);
+        int expResult = -499;
         int result = instance.incrementar();
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
     }
-
     @Test
-    public void testReiniciar() {
-        System.out.println("reiniciar");
-        ContadorAscendente instance = null;
-        instance.reiniciar();
-        fail("The test case is a prototype.");
-    }
-
-    @Test
-    public void testCambiarValor() {
-        System.out.println("cambiarValor");
-        int modificador = 0;
-        ContadorAscendente instance = null;
-        int expResult = 0;
-        int result = instance.cambiarValor(modificador);
+    public void testIncrementar1() {
+        System.out.println("incrementar");
+        ContadorAscendente instance = new ContadorAscendente(999);
+        int expResult = 1000;
+        int result = instance.incrementar();
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
     }
-
     @Test
-    public void testToString() {
-        System.out.println("toString");
-        ContadorAscendente instance = null;
-        String expResult = "";
-        String result = instance.toString();
+    public void testIncrementar3() {
+        System.out.println("incrementar");
+        ContadorAscendente instance = new ContadorAscendente(1000);
+        int expResult = 1000;
+        int result = instance.incrementar();
         assertEquals(expResult, result);
-        fail("The test case is a prototype.");
     }
-    
+    @Test
+    public void testIncrementar4() {
+        System.out.println("incrementar");
+        ContadorAscendente instance = new ContadorAscendente(3000);
+        int expResult = 1000;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testIncrementar5() {
+        System.out.println("incrementar");
+        ContadorAscendente instance = new ContadorAscendente(500);
+        int expResult = 501;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testIncrementar6() {
+        System.out.println("incrementar");
+        ContadorAscendente instance = new ContadorAscendente(1500);
+        int expResult = 1000;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }
 }
