@@ -33,6 +33,10 @@ public class ContadorAscendente {
         return this.valorActual;
     }
     
+    public void reiniciar(){
+        this.valorActual=0;
+    }
+    
     @Override
     public String toString() {
         return "ContadorAscendente{" + "valorActual=" + valorActual + '}';
