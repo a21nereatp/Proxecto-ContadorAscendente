@@ -20,9 +20,6 @@
                         <id>prepare-agent</id>
                     </execution>
                 </executions>
-                <configuration>
-                    <foo>bar</foo>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
