@@ -24,6 +24,15 @@ public class ContadorAscendente {
         this.valorActual = valorActual;
     }
 
+    public int incrementar(){
+        if (this.valorActual<1000){
+            this.valorActual++;
+        }else{
+            this.valorActual=1000;
+        }
+        return this.valorActual;
+    }
+    
     @Override
     public String toString() {
         return "ContadorAscendente{" + "valorActual=" + valorActual + '}';
